@@ -1,2 +1,5 @@
 gunicorn==20.1.0
 Flask==2.1.2
+cloudscraper==1.2.60
+bs4==0.0.1
+beautifulsoup4==4.11.1
