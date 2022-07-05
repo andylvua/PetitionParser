@@ -32,7 +32,7 @@ input {
 }
 
 button {
-  padding: 0 0 0 150px;
+  padding: 0 0 0 18px;
   background: none;
   border: none;
   outline: none;
@@ -48,6 +48,14 @@ body {
 a.demo {
   text-align: center;
   font-size: 1.6rem;
+  font-weight: normal;
+  color: rgba(202, 205, 239, 0.8);
+  margin-bottom: 3rem;
+}
+
+a.signatures {
+  text-align: center;
+  font-size: 2rem;
   font-weight: normal;
   color: rgba(202, 205, 239, 0.8);
   margin-bottom: 3rem;
@@ -89,25 +97,9 @@ a.demo {
   flex-direction: row;
   max-width: 500px;
   margin: 0 auto;
-  border-radius: 2px;
-  padding: 1.4rem 2rem 1.6rem;
+  border-radius: 10px;
+  padding: 1.6rem 2rem 1.6rem;
   background: rgba(57, 63, 84, 0.8);
-}
-.webflow-style-input:after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: 999;
-  height: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  background-position: 0% 0%;
-  background: linear-gradient(to right, #B294FF, #57E6E6, #FEFFB8, #57E6E6, #B294FF, #57E6E6);
-  background-size: 500% auto;
-  -webkit-animation: gradient 3s linear infinite;
-          animation: gradient 3s linear infinite;
 }
 
 .webflow-style-input input {
@@ -134,5 +126,77 @@ a.demo {
 
 .input
 {
-  width: 150%;
+  width: 200%;
+}
+
+a.btn-success {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+  color: rgba(202, 205, 239, 0.8);
+  margin-top: 30px;
+}
+
+.btn-success {
+  border: 2px solid #fafafa;
+  border-radius: 50px;
+  position: absolute;
+  color: #0ac029;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 22px 0 0 0;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.btn-success:before {
+  font-family: 'ionicons';
+  content: '\f2dd';
+  font-size: 26px;
+  color: #ffffff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: .3s;
+}
+
+.btn-success:hover:before {
+  display: none;
+}
+
+.btn-success:hover:after {
+  content: 'Signatories JSON';
+  white-space: nowrap;
+
+  color: #0ac029;
+  font-size: 17px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: 1.0s;
+  animation: fadein 0.5s;
+}
+
+.btn-success:hover {
+  border: 2px solid #0ac029;
+  width: 200px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }

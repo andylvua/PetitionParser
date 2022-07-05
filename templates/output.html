@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="HTML5">
+
+<head>
+  <link rel="stylesheet" href="/static/stylesheet.css">
+      <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <title>Petition Parser</title>
+    <script src="https://kit.fontawesome.com/36af0cf4b0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<div class="container">
+
+  <div class="demo-flex-spacer"></div>
+     <a class="signatures" title="Signatures">There are {{ number_of_signatures }}/25000 signatures for this petition</a>
+     <a href="{{url_for('download')}}" class="btn-success"></a>
+  <div class="demo-flex-spacer"></div>
+
+  <a class="demo" href="https://t.me/andylvua" title="Developer">Contact developer</a>
+</div>
+
+</body>
+</html>
