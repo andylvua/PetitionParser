@@ -14,7 +14,9 @@
 
     <form method="POST">
       <div class="webflow-style-input">
-        <input type="url" name="url" class="input" placeholder="Enter petition url"/>
+        <input pattern="https:\/\/petition\.president\.gov\.ua\/petition\/\d{6}"
+               title="Please, enter a valid petition url" name="url" class="input"
+               placeholder="Enter petition url"/>
         <button type="submit" name="submit_button" value="Do Something"><i class="fas fa-arrow-right"></i></button>
       </div>
     </form>
